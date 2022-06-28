@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: #630005;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#teste {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-imagem {
+    width: 200px;
+    height: 200px;
+    border-radius: 35px;
+}
+
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-texo {
+    margin-left: 20px;
+    color: #fff;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0% 10px;
+}
+
+.menu li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.menu li a:hover {
+    background-color: rgba(136, 143, 8, 0.8);
+}
+
+body {
+    background: rgb(120, 117, 117);
+}
+
+.painel {
+    background-image: url("../img/painel.webp");
+    height: 1000px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.painelText {
+    font-size: 1.9em;
+    text-align:center;
+    position:relative;
+    top: 40%;
+    width: 900px;
+    align-items: center;
+    color: rgb(237, 215, 215);
+    margin-left:  300px;
+   background-color: rgba(40, 40, 37, 0.523);
+}
+
+.personagens,
+.chefes {
+    width: 800px;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    gap: 70px;
+}
+
+.personaImg {
+    width: 280px;
+    border: 2.5px solid #000
+}
+
+.chefes img {
+    width: 280px;
+    border: 2.5px solid #000
+}
+
+#char {
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/background.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+
+ul {
+    text-align: center;
+
+}
+
+li {
+    display: inline-block;
+}
+
+.logoImg {
+    width: 30px;
+    padding-left: 10%
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 15px;
+}

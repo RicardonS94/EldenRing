@@ -7,21 +7,21 @@
 header {
     width: 100%;
     background-color: #630005;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 20px 0;
 }
 
-#teste {
+.header-container{
+    margin:auto;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 980px;
+    
 }
-
 .logo-imagem {
-    width: 200px;
-    height: 200px;
-    border-radius: 35px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
 .container-logo {
@@ -36,7 +36,6 @@ header {
 
 .menu li {
     display: inline-block;
-    margin: 0% 10px;
 }
 
 .menu li a {
@@ -44,8 +43,8 @@ header {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 15px;
+    padding: 5px 10px;
+    border-radius: 5%;
 }
 
 .menu li a:hover {
@@ -64,35 +63,18 @@ body {
     position: relative;
 }
 
-.painelText {
+.container{
+max-width: 980px;
+margin: auto;
+padding-top: 25%;
+}
+
+.painel p{
     font-size: 1.9em;
     text-align:center;
-    position:relative;
-    top: 40%;
-    width: 900px;
-    align-items: center;
     color: rgb(237, 215, 215);
-    margin-left:  300px;
-   background-color: rgba(40, 40, 37, 0.523);
-}
-
-.personagens,
-.chefes {
-    width: 800px;
-    display: flex;
-    margin-top: 150px;
-    margin-bottom: 10px;
-    gap: 70px;
-}
-
-.personaImg {
-    width: 280px;
-    border: 2.5px solid #000
-}
-
-.chefes img {
-    width: 280px;
-    border: 2.5px solid #000
+   font-weight: bold;
+    background-color: rgba(40, 40, 37, 0.523);
 }
 
 #char {
@@ -107,12 +89,26 @@ body {
    
 }
 
-ul {
+.char-container{
+    max-width: 800px;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    gap: 70px;
+}
+
+.char-container img{
+    width: 280px;
+    border: 2px solid #000
+}
+
+
+footer ul {
     text-align: center;
     background-color: #630005;
 }
 
-li {
+footer li {
     display: inline-block;
 }
 
@@ -124,4 +120,50 @@ li {
 section {
     margin-left: 20px;
     margin-right: 15px;
+}
+
+@media (max-width:680px){
+    .logo-imagem{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    .logo-texo {
+        margin-left: 10px;
+    }
+    .container-logo h1{
+        font-size: 1.5em;
+    }
+    .menu li a{
+        font-size: 1.1em;
+    }
+    .painel p{
+        font-size: 1.5em;
+    }
+    .painel{
+        height: 700px;
+    }
+    .char-container{
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 75px 20px;
+        gap: initial;
+    }
+    #invert{
+        flex-direction: column-reverse;
+    } 
+}
+@media (max-width:430px){
+    .painel{
+        height: 500px;
+    }
+    .painel p{
+        font-size: 1em; 
+    }
+    .container{
+        padding-top: 30%;
+    }
 }

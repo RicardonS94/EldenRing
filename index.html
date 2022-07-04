@@ -11,25 +11,27 @@
 
 <body>
     <header>
-        <div class="container-logo">
-            <img class="logo-imagem" src="img/eldenring.jpg">
-            <div class="logo-texo"></div>
-            <h1>ELDEN RING</h1>
-        </div>
-        <!--container-logo-->
-        <div class="menu">
-            <ul>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">loja</a></li>
-                <li><a href="#">contato</a></li>
-            </ul>
-        </div>
-        <!--menu-->
+        <div class="header-container">
+            <div class="container-logo">
+                <img class="logo-imagem" src="img/eldenring.jpg">
+                <div class="logo-texo"></div>
+                <h1>ELDEN RING</h1>
+            </div>
+            <!--container-logo-->
+            <div class="menu">
+                <ul>
+                    <li><a href="#">sobre</a></li>
+                    <li><a href="#">loja</a></li>
+                    <li><a href="#">contato</a></li>
+                </ul>
+            </div>
+            <!--menu-->
+        </div>  
     </header>
     <main>
         <div class="painel">
-
-            <p class="painelText"><b>Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and
+            <div class="container">
+            <p>Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and
                     become an <a href="https://www.instagram.com/ghoul66/" target=_blank>Elden Lord</a> in the Lands
                     Between.
                     In the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the
@@ -52,7 +54,9 @@
                     the
                     Lands
                     Between beyond the foggy sea to stand before the Elden Ring.
-                    And become the <a href="mailto:ricardonsant@hotmail.com">Elden Lord</a>.</b></p>
+                    And become the <a href="mailto:ricardonsant@hotmail.com">Elden Lord</a>.
+                </p>
+            </div>
         </div>
 
 
@@ -60,8 +64,8 @@
 
             <!--Conteudo de personagens-->
 
-            <div class="personagens">
-                <img class="personaImg" src="img/blaidd.jpg" alt="blaidd half wolf">
+            <div class="char-container">
+                <img src="img/blaidd.jpg" alt="blaidd half wolf">
                 <p><b>Blaidd</b> is an NPC in Elden Ring. Blaidd is a half man, half wolf, found howling in the
                     Mistwood
                     Ruins.
@@ -74,8 +78,7 @@
                 </p>
             </div>
 
-            <div class="personagens">
-
+            <div class="char-container" id="invert">
                 <p><b>Ranni the Witch</b> is an NPC in Elden Ring. Ranni the Witch is a mysterious figure who first
                     introduces
                     herself as Renna. Upon meeting her again at Three Sisters, she reveals her true name and
@@ -84,11 +87,11 @@
                     covers vital information for Ranni's questline for Elden Ring.<br>
                     <cite>"I am the witch Ranni. I stole Death long ago, and search now for the dark path.</cite>
                 </p>
-                <img class="personaImg" src="img/ranni.jpg" alt="ranni the witch">
+                <img  src="img/ranni.jpg" alt="ranni the witch">
             </div>
 
-            <div class="chefes">
-                <img src="img/godrickboss.jpg">
+            <div class="char-container">
+                <img src="img/godrickboss.jpg" alt="Godrick">
                 <p><b>Godrick the Grafted</b> is a Boss in Elden Ring. Godrick the Grafted is the ruler of Stormveil
                     Castle,
                     and one of the first demigods that players will fight. You don't need to initially fight Godrick
@@ -100,7 +103,7 @@
                 </p>
             </div>
 
-            <div class="chefes">
+            <div class="char-container" id="invert">
 
                 <P><b>Rennala, Queen of the Full Moon</b> is an NPC in Elden Ring. Rennala, Queen of the Full Moon
                     is
@@ -114,11 +117,11 @@
                     <cite>"Ah... Thou... Is it thy wish to be born anew? To become a sweeting, reborn of my beloved
                         egg?</cite>
                 </P>
-                <img src="img/renallaboss.jpg">
+                <img src="img/renallaboss.jpg" alt=" Renalla">
             </div>
 
-            <div class="chefes">
-                <img src="img/radhan.webp">
+            <div class="char-container">
+                <img src="img/radhan.webp" alt="General Radhan">
                 <p><b>Starscourge Radahn</b> is a Boss in Elden Ring. Starscourge Radahn is one of the most powerful
                     demigods
                     located in Caelid, where he can be accessed from Redmane Castle after activating the Radahn
@@ -137,15 +140,15 @@
     <footer>
         <ul>
             <li>
-                <a href="mailto:ricardonsant@hotmail.com"><img class="logoImg" src="img/o-email.png"></a>
+                <a href="mailto:ricardonsant@hotmail.com"><img class="logoImg" src="img/o-email.png" alt="email logo"></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/ghoul66/" target=_blank><img class="logoImg"
-                        src="img/instagram.png"></a>
+                        src="img/instagram.png" alt="instagram logo"></a>
             </li>
             <li>
                 <a href="https://www.facebook.com/rickghoul66" target=_blank><img class="logoImg"
-                        src="img/facebook.png"></a>
+                        src="img/facebook.png" alt="facebook logo"></a>
             </li>
         </ul>
     </footer>
